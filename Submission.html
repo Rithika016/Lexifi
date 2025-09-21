@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LexiFi - Hackathon Submission</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+        }
+        @media print {
+            body {
+                font-size: 10pt;
+            }
+            .no-print {
+                display: none;
+            }
+            .page-break {
+                page-break-before: always;
+            }
+            .card {
+                 border: 1px solid #e5e7eb !important;
+                 box-shadow: none !important;
+            }
+             .bg-sky-50 {
+                background-color: #f0f9ff !important;
+            }
+        }
+        .section-title { color: #0c4a6e; }
+        .sub-title { color: #0369a1; }
+        .card { border: 1px solid #e5e7eb; box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.05); }
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+
+    <div class="max-w-4xl mx-auto p-8 md:p-12">
+
+        <!-- Cover Page -->
+        <div class="flex flex-col items-center justify-center text-center h-[90vh] min-h-[700px]">
+            <div class="p-4 bg-sky-100 border-2 border-sky-200 rounded-2xl mb-6">
+                <svg class="w-12 h-12 text-sky-800" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0012 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75z" /></svg>
+            </div>
+            <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight section-title mb-4">LexiFi: Clarity, Visualized</h1>
+            <p class="text-xl md:text-2xl text-gray-600 max-w-2xl mx-auto">A Gen AI Solution to Democratize Understanding</p>
+            <div class="mt-12 text-lg text-gray-700">
+                <p class="font-bold">[Your Name / Team Name]</p>
+                <p>Hackathon Submission</p>
+            </div>
+             <p class="no-print absolute bottom-12 text-gray-400 text-sm">Open the print menu (Ctrl+P or Cmd+P) and "Save as PDF" to generate your document.</p>
+        </div>
+
+        <!-- Section 1: Brief about the prototype -->
+        <div class="page-break pt-12">
+            <h2 class="text-3xl font-bold section-title border-b-2 border-sky-200 pb-2 mb-6">1. Brief about the prototype</h2>
+            <p class="text-base text-gray-700 leading-relaxed">LexiFi is a Gen AI-powered web application that tackles the universal problem of dense, intimidating legal documents. Instead of facing a wall of text, users can transform any contract into a clean, interactive, and visual flowchart—a "document story."</p>
+            <p class="text-base text-gray-700 leading-relaxed mt-4">Our prototype deconstructs complex jargon and rebuilds it into a simple, top-to-bottom narrative. Each node in the flowchart represents a key clause, which is automatically color-coded for instant risk assessment. This intuitive interface turns a passive reading experience into an active tool for empowerment, allowing anyone to understand the documents that shape their lives with confidence and clarity.</p>
+        </div>
+
+        <!-- Section 2: Opportunity -->
+        <div class="mt-12">
+            <h2 class="text-3xl font-bold section-title border-b-2 border-sky-200 pb-2 mb-6">2. Opportunity: The LexiFi Advantage</h2>
+            <div class="space-y-6">
+                <div class="card p-6 rounded-lg">
+                    <h3 class="font-bold text-xl sub-title mb-2">How is it different from other existing solutions?</h3>
+                    <p class="text-gray-700">Current solutions are primarily text summarizers. They take a long wall of text and return a shorter, slightly less intimidating wall of text. LexiFi is different because it **fundamentally changes the medium.** We don't just shorten the content; we transform its structure from linear text into a visual, interactive, and hierarchical story. This visual approach provides an immediate "at-a-glance" understanding that simple summarization can never achieve.</p>
+                </div>
+                <div class="card p-6 rounded-lg">
+                    <h3 class="font-bold text-xl sub-title mb-2">How will it be able to solve the problem?</h3>
+                    <p class="text-gray-700">The core problem isn't just length; it's the lack of clarity, context, and power. LexiFi solves this directly:</p>
+                    <ul class="list-disc list-inside mt-2 space-y-1 text-gray-700">
+                        <li><b>Clarity:</b> The flowchart simplifies complex relationships between clauses.</li>
+                        <li><b>Context:</b> Color-coding (Red for risks, Green for benefits) provides instant emotional and logical context.</li>
+                        <li><b>Power:</b> Our "Suggest a Fairer Version" feature moves the user from a passive reader to an active, empowered negotiator.</li>
+                    </ul>
+                </div>
+                <div class="card p-6 rounded-lg bg-sky-50 border-sky-200">
+                    <h3 class="font-bold text-xl sub-title mb-2">USP of the proposed solution:</h3>
+                    <p class="text-gray-700">Our Unique Selling Proposition is **Actionable Intelligence.** LexiFi is the only tool that doesn't just tell you *what* a contract says, but helps you decide *what to do about it*. The AI-powered "Suggest a Fairer Version" feature is our killer innovation, turning the application from a simple reader into an essential co-pilot for any
+
+        <!-- Section 3: Features -->
+        <div class="mt-12 page-break pt-12">
+            <h2 class="text-3xl font-bold section-title border-b-2 border-sky-200 pb-2 mb-6">3. List of features offered by the solution:</h2>
+            <ul class="list-decimal list-inside space-y-4 text-gray-700">
+                <li><b>AI-Powered Document Deconstruction:</b> A sophisticated backend that uses Google's Gemini API to analyze and understand the semantic structure of any legal document.</li>
+                <li><b>Interactive Flowchart Visualization:</b> The core of our UI, presenting the document as a clean, top-to-bottom story that is easy to navigate on any device.</li>
+                <li><b>At-a-Glance Risk Analysis:</b> An intelligent color-coding system that automatically categorizes clauses as benefits (Green), restrictions/risks (Red), or neutral obligations (Blue).</li>
+                <li><b>Deep-Dive Analysis Modal:</b> A focused view for each clause, providing a concise, AI-generated Summary and an "Explain Like I'm 5" (ELI5) analogy for maximum clarity.</li>
+                <li><b>Actionable AI Suggestions (USP):</b> The groundbreaking "Suggest a Fairer Version" button, which uses Gen AI to rewrite unfavorable clauses to be more balanced and equitable.</li>
+                <li><b>Contextual Q&A:</b> An integrated input where users can ask specific follow-up questions about any clause.</li>
+            </ul>
+        </div>
+        
+        <-- Section 4: Wireframes -->
+        <div class="mt-12">
+           !  <h2 class="text-3xl font-bold section-title border-b-2 border-sky-200 pb-2 mb-6">4. Wireframes/Mock diagrams of the proposed solution:</h2>
+             <div class="space-y-8">
+                 <div class="text-center">
+                    <!-- IMAGE PLACEHOLDER 1 -->
+                    <div class="card p-4">
+                        <img src="https://ibb.co/Gf8dCPx1" alt="LexiFi Main Flowchart View" class="rounded-lg w-full">
+                    </div>
+                    <p class="mt-2 text-sm text-gray-600 font-semibold">Caption: Main application view. The AI has transformed the contract into a color-coded visual story.</p>
+                </div>
+                <div class="text-center">
+                     <!-- IMAGE PLACEHOLDER 2 -->
+                     <div class="card p-4">
+                        <img src="https://ibb.co/xK1v75N2" alt="LexiFi Deep-Dive Modal" class="rounded-lg w-full">
+                    </div>
+                    <p class="mt-2 text-sm text-gray-600 font-semibold">Caption: The deep-dive modal, showcasing the ELI5 analogy and the "Suggest a Fairer Version" feature.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 5: Process Flow -->
+        <div class="mt-12 page-break pt-12">
+            <h2 class="text-3xl font-bold section-title border-b-2 border-sky-200 pb-2 mb-6">5. Process Flow Diagram</h2>
+            <div class="space-y-2">
+                 <div class="card p-4 text-center font-semibold text-lg">User arrives with a legal document</div>
+                 <p class="text-center text-2xl text-gray-300">↓</p>
+                 <div class="card p-4"><strong class="sub-title">1. Input:</strong> User pastes the document and clicks "Generate."</div>
+                 <p class="text-center text-2xl text-gray-300">↓</p>
+                 <div class="card p-4"><strong class="sub-title">2. AI Processing:</strong> Gemini API deconstructs and analyzes the text.</div>
+                 <p class="text-center text-2xl text-gray-300">↓</p>
+                 <div class="card p-4"><strong class="sub-title">3. Visualization:</strong> A color-coded flowchart is instantly generated.</div>
+                 <p class="text-center text-2xl text-gray-300">↓</p>
+                 <div class="card p-4"><strong class="sub-title">4. Empowerment:</strong> User interacts, analyzes, and gets actionable advice.</div>
+                 <p class="text-center text-2xl text-gray-300">↓</p>
+                 <div class="card p-4 text-center font-semibold text-lg">User leaves with a clear understanding.</div>
+            </div>
+        </div>
+        
+        <!-- Section 6: Architecture -->
+        <div class="mt-12 page-break pt-12">
+            <h2 class="text-3xl font-bold section-title border-b-2 border-sky-200 pb-2 mb-6">6. Architecture Diagram</h2>
+            <div class="card p-8 text-center">
+                <p class="mb-8 text-lg">LexiFi is built on a modern, scalable, and **serverless** architecture.</p>
+                <div class="flex flex-col md:flex-row justify-around items-center space-y-6 md:space-y-0">
+                    <div class="font-semibold text-lg">User (Client)</div>
+                    <div class="text-4xl text-gray-300 font-sans">→</div>
+                    <div class="font-semibold text-lg">Netlify (Hosting)</div>
+                    <div class="text-4xl text-gray-300 font-sans">→</div>
+                    <div class="font-semibold text-lg">Gemini API (AI Backend)</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 7: Technologies -->
+        <div class="mt-12">
+            <h2 class="text-3xl font-bold section-title border-b-2 border-sky-200 pb-2 mb-6">7. Technologies Used</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4 text-center">
+                <div class="card p-4 font-semibold">HTML5, CSS3, JS</div>
+                <div class="card p-4 font-semibold">Tailwind CSS</div>
+                <div class="card p-4 font-semibold">Google Gemini API</div>
+                <div class="card p-4 font-semibold">Netlify</div>
+                <div class="card p-4 font-semibold">Git & GitHub</div>
+            </div>
+        </div>
+
+        <!-- Section 8: Future Scope -->
+        <div class="mt-12 page-break pt-12">
+            <h2 class="text-3xl font-bold section-title border-b-2 border-sky-200 pb-2 mb-6">8. Future Scope & Vision</h2>
+            <p class="mb-6 text-lg">LexiFi is more than a prototype; it's the foundation for a new standard in transparency.</p>
+            <div class="space-y-4">
+                <div class="card p-4 bg-sky-50"><strong class="sub-title">Browser Extension:</strong> Analyze terms of service pages as you browse the web.</div>
+                <div class="card p-4 bg-sky-50"><strong class="sub-title">Real-Time Negotiation Assistant:</strong> Get live suggestions in Google Docs as a contract is being written.</div>
+                <div class="card p-4 bg-sky-50"><strong class="sub-title">E-Signature Integration:</strong> Partner with platforms like DocuSign to provide a LexiFi analysis just before signing.</div>
+                <div class="card p-4 bg-sky-50"><strong class="sub-title">Broader Applications:</strong> Expand to analyze scientific papers, complex financial reports, and dense academic texts.</div>
+            </div>
+             <p class="text-center text-xl font-bold section-title mt-10 border-t-2 border-sky-200 pt-8">Our vision is to build a world where complex information is no longer a barrier, but an open book for everyone.</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
+
+                                                                                                                                                                               
